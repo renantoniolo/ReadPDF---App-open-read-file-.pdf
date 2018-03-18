@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+ x:Class="ReadPDF.View.HomePdfView"
+ Title="Open PDF">
+    <ContentPage.Content>
+        
+        <StackLayout Padding="10">
+            
+            <Label 
+               Margin="10"
+               HorizontalTextAlignment="Center"
+               Text="Exempos para abrir um arquivo .pdf"
+               TextColor="Black"
+               FontSize="Medium" />
+
+            <Button 
+                Margin="5"
+                Text="Abrir PDF usando App externo"
+                TextColor="Gray"
+                Command="{Binding OpenPdfFileExternalCommand}"/>
+
+            <Button 
+                Margin="5"
+                Text="Abrir PDF usando WebView"
+                TextColor="Gray"
+                Command="{Binding OpenPdfFileWebViewCommand}"/>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
